@@ -21,7 +21,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        
+
+      - name: set variable for pytest
+        run: export DJANGO_SETTINGS_MODULE=git_actions.settings 
+
       - name: Install django
         run: pip install django
 
