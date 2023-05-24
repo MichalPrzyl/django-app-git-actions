@@ -44,5 +44,5 @@ jobs:
 
 
       - name: Run tests
-        run: pytest tests -s -v
+        run: cd git_actions && pytest tests -s -v
 
