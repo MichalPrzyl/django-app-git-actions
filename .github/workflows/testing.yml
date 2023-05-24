@@ -29,5 +29,5 @@ jobs:
         run: pip install django
 
       - name: Run tests
-        run: pytest git_actions/tests
+        run: cd git_actions && pytest tests
 
