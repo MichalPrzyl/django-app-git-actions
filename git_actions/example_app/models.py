@@ -5,3 +5,4 @@ class Person(models.Model):
     first_name=models.CharField(max_length=255)
     last_name=models.CharField(max_length=255)
     another_field = models.CharField(max_length=23, default="---")
+    # something
