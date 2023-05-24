@@ -32,8 +32,17 @@ jobs:
 
       - name: Install pytest-django
         run: pip install pytest-django
+      
+      - name: Django Migration Checker
+        uses: hardcoretech/django-migration-checker-action@v1
+        with:
+          app-path: git_actions
+
+
       - name: run migrations
         run: cd git_actions && python manage.py makemigrations && python manage.py migrate
+
+
       - name: Run tests
         run: pytest tests -s -v
 
