@@ -2,6 +2,8 @@
 name: testing via pytest
 run-name: ${{ github.actor }} is running pytest testing
 on: [push]
+env:
+  DJANGO_SETTINGS_MODULE: git_actions.settings
 jobs:
   start:
     runs-on: ubuntu-latest
