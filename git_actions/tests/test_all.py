@@ -14,4 +14,5 @@ def test_second():
     queryset = Person.objects.all()
     print(f"\n\n")
     print(queryset)
+    print(queryset.values())
     assert queryset.count() == 1
