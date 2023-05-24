@@ -12,6 +12,10 @@ jobs:
 
       - name: checking directories
         run: ls -al 
+
+      - name: check requirements
+        run: cat git_actions/requirements.txt
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
