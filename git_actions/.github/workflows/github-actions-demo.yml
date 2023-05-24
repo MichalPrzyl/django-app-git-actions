@@ -1,0 +1,2 @@
+- name: Hello World dj test
+  uses: danrhjones/playingWithGithubActions@0.0.1
