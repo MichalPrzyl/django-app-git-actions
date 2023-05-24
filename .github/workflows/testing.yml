@@ -30,6 +30,9 @@ jobs:
       - name: Install django
         run: pip install django
 
+      - name: Install pytest-django
+        run: pip install pytest-django
+
       - name: Run tests
         run: cd git_actions && pytest tests
 
