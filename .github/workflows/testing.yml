@@ -32,7 +32,8 @@ jobs:
 
       - name: Install pytest-django
         run: pip install pytest-django
-
+      - name: run migrations
+        run: cd git_actions && python manage.py makemigrations && python manage.py migrate
       - name: Run tests
-        run: cd git_actions && pytest tests -s -v
+        run: pytest tests -s -v
 
