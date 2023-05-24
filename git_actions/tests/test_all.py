@@ -12,4 +12,6 @@ def test_first():
 def test_second():
     Person.objects.create(first_name="Michał", last_name="Przyłucki")
     queryset = Person.objects.all()
+    print(f"\n\n")
+    print(queryset)
     assert queryset.count() == 1
